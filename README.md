@@ -1,6 +1,5 @@
 # v2ray-vless
-A repository to setup VRay+VLess.
-
+A repository to setup VRay+VLess (VPN) on Ubuntu 22.
 
 ## Getting Started
 Clone this repository to your local machine:
@@ -27,5 +26,7 @@ This will generate a QR Code and will also save a file named qr.png in the direc
 ## Android Application
 
 You can use V2RayNG Android Application to scan the QR Code generated. 
+
 Github Link (https://github.com/2dust/v2rayNG)
+
 PlayStore Link (https://play.google.com/store/apps/details?id=com.v2ray.ang)

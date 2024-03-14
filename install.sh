@@ -7,6 +7,11 @@ then echo "Please run as root"
     exit
 fi
 
+if ! command -v qrencode &> /dev/null; then    
+    echo "qrencode is not installed. Installing..."    
+    apt install qrencode
+fi
+
 if ! command -v xray &> /dev/null; then    
     echo "Xray is not installed. Installing..."
     bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install --beta
@@ -63,3 +68,5 @@ echo ""
 
 qrencode -s 120 -t ANSIUTF8 "$url"
 qrencode -s 50 -o qr.png "$url"
+
+sudo systemctl restart xray
