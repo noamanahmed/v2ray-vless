@@ -1,0 +1,7 @@
+{
+    "name": "vless+tls+h2+reality",
+    "email":"admin",
+    "port": 8000,
+    "sni": "noamanahmed.com",
+    "path": "%2F"
+}
